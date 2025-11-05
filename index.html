@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EUROPEAN GREEN DIPLOMACY WEEK SERBIA 2025</title>
+<style>
+/* Scoped styles for bilingual agenda */
+#bilingual-agenda * { box-sizing: border-box; }
+#bilingual-agenda {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #15568A;
+  color: #FFF;
+  line-height: 1.5;
+  text-align: justify;
+}
+#bilingual-agenda .newsletter-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #183C6C;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  animation: fadeIn 0.8s ease-out;
+}
+#bilingual-agenda .toggle-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#bilingual-agenda .lang-toggle-btn {
+  background: #37B9C5;
+  color: #FFF;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#bilingual-agenda .lang-toggle-btn.active,
+#bilingual-agenda .lang-toggle-btn:focus {
+  background: #FFD322;
+  color: #183C6C;
+  outline: none;
+}
+#bilingual-agenda .banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+#bilingual-agenda .date-header {
+  font-weight: bold;
+  font-size: 22pt;
+  color: #FFF;
+  margin-top: 30px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  border-bottom: 3px solid #FFD322;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  background-color: #37B9C5;
+  text-align: left;
+}
+#bilingual-agenda .programme-header {
+  display: inline-block;
+  background-color: #15568A !important;
+  border-bottom: none !important;
+  padding: 0 16px;
+  box-shadow: none !important;
+}
+#bilingual-agenda .time {
+  font-weight: bold;
+  font-size: 16pt;
+  color: #FFD322;
+  margin: 15px 0 8px 0;
+  padding-left: 5px;
+  border-left: 4px solid #E9E229;
+}
+#bilingual-agenda .body-text {
+  font-size: 12pt;
+  color: #FFF;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+#bilingual-agenda .event {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #15568A;
+  border-radius: 5px;
+  border-left: 4px solid #37B9C5;
+  position: relative;
+  overflow: hidden;
+}
+#bilingual-agenda .lokacija {
+  font-size: 12pt;
+  color: #FFF;
+  font-weight: bold;
+  margin: 10px 0;
+  line-height: 1.6;
+  border-left: 4px solid #FFF;
+  padding-left: 5px;
+}
+#bilingual-agenda .footer {
+  height: 100px;
+  background-color: #37B9C5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+#bilingual-agenda .footer p,
+#bilingual-agenda .footer a {
+  margin: 0;
+  color: #FFF;
+  text-decoration: none;
+}
+@media (max-width: 950px) {
+  #bilingual-agenda .newsletter-container { max-width: 100%; padding: 10px; }
+  #bilingual-agenda .date-header { font-size: 18pt; }
+  #bilingual-agenda .time { font-size: 14pt; }
+}
+@media (max-width: 600px) {
+  #bilingual-agenda { text-align: left; }
+  #bilingual-agenda .date-header { font-size: 16pt; }
+  #bilingual-agenda .time { font-size: 12pt; }
+}
+@keyframes fadeIn {
+  from { opacity: 0.8; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+<div id="bilingual-agenda">
+  <div class="newsletter-container">
+    <div class="toggle-header" role="group" aria-label="Language toggle">
+      <button class="lang-toggle-btn active" id="btn-eng" aria-pressed="true" onclick="switchLang('en')">ENG</button>
+      <button class="lang-toggle-btn" id="btn-srb" aria-pressed="false" onclick="switchLang('srb')">SRB</button>
+    </div>
+    <!-- English Banner & Agenda -->
+    <div id="agenda-en" lang="en">
+      <img class="banner" src="banner.jpg" alt="European Green Diplomacy Week Banner">
+      <!-- ENGLISH CONTENT START -->
+      <div class="date-section">
+        <hr style="border: none; border-top: 3px solid #FFF; margin-bottom: 30px;">
+        <p class="date-header programme-header">PROGRAMME</p>
+        <div class="date-section">
+          <p class="date-header">14 November  - Friday</p>
+          <div class="event">
+            <p class="time">19:00 – 20:20 Friday Movie Nights: “Climate Hero: The Man Who Plants Baobabs”</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Screening of the documentary showcasing El Hadj Salifou Ouédraogo’s 50-year mission of planting baobabs in Burkina Faso. Networking and informal exchange on climate change.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">17 November - Monday</p>
+          <div class="event">
+            <p class="time">14:00 – 16:00 City and Me Launch Event: Engaging Citizens for a Greener Future</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Launch of The City and Me app, rewarding sustainable actions such as walking, cycling, recycling, and tree planting, and promoting civic engagement and local cooperation. App users can track saplings planted in Surčin (until 25 November, weather permitting) through Discover Serbia, as part of a project to green 250 hectares with 500,000 trees, continuing EU support for Belgrade’s greening under the EU for Green Agenda in Serbia project.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">18 November - Tuesday</p>
+          <div class="event">
+            <p class="time">09:30 – 13:00 Empowering Women Entrepreneurs in the Green Transition: “SME Go Green” Workshop</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Interactive workshop on sustainable business practices and green finance for women-led SMEs. Participants will learn cost-effective ways to invest in renewable energy. (EBRD partnership)</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 Climate Talks: Nature-based Solutions for a Resilient City</p>
+            <p class="lokacija">Europe House Niš</p>
+            <p class="body-text">Local dialogue on urban climate vulnerabilities, including floods and heat islands, with presentations of Nature-based Solutions from the NATURED project. Fostering expert, institutional, and citizen collaboration via the Interreg IPA ADRION Programme.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">19 November - Wednesday</p>
+          <div class="event">
+            <p class="time">10:00 – 12:00 “Priroda i društvo”: Interactive Water Preservation Classroom</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Educational program for 2nd–3rd graders of Drinka Pavlović School, including a lecture on aquatic life and environmental preservation, an interactive aquarium activity with influencer Andrija Jo and an EUD representative, and hands-on sessions on the school’s Green Roof (supported by GEF) and Sweden-supported innovations for wetlands preservation, both implemented by UNDP. Includes activation on EU4Green exhibition.</p>
+          </div>
+          <div class="event">
+            <p class="time">12:00 – 13:15 RERI Green Panel Discussion</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Panel featuring students from EU-supported projects and the premiere of a short film under the BESTbelt initiative. Participants include representatives from local government, embassies, businesses, youth, and environmental organizations.</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 The Future of Food: Rethinking Food Waste — From Planning to Plate</p>
+            <p class="lokacija">Europe House Niš</p>
+            <p class="body-text">In partnership with the Science Club Niš, a new monthly series explores how innovation, technology, and food culture shape sustainable living. The November edition, held with the Institute of Food Technology (FINS), focuses on reducing household food waste through smarter shopping, meal planning, and better use of ingredients.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">20 November - Thursday</p>
+          <div class="event">
+            <p class="time">11:30 – 13:00 Presentation of the Shadow Report - Chapter 27 in Serbia: System Error</p>
+            <p class="lokacija">Belgrade, Miljenko Dereta Space</p>
+            <p class="body-text">The twelfth Shadow Report of Coalition 27 covers Serbia’s progress in Chapter 27 – Environment and Climate Change from April 2024 to May 2025, addressing key developments and challenges in waste, air, water, nature protection, climate, and related sectors.</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 The Art of Fika – Upcycling Workshop</p>
+            <p class="lokacija">Europe House Niš</p>
+            <p class="body-text">Inspired by the Swedish fika tradition — coffee, connection, and inspiration — the workshop blends a relaxed atmosphere with a creative take on sustainability. Participants will explore Swedish recycling and upcycling practices while enjoying coffee and conversation.</p>
+          </div>
+          <div class="event">
+            <p class="time">15:00 – 16:00 EU4GREEN Exhibition Opening</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Ceremonial opening of the Greenest Examples from the Western Balkans exhibition, showcasing selected contest entries on circular economy, pollution reduction, and biodiversity protection. Exhibition displayed 18–24 November with activations throughout the week.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">21 November - Friday</p>
+          <div class="event">
+            <p class="time">11:00 – 13:00 Socratic Café on Environmental Protection</p>
+            <p class="lokacija">Opens Novi Sad</p>
+            <p class="body-text">Moderated by an environmental protection engineer, this program for pupils and students encourages the exchange of ideas on environmental solutions. Organized in partnership with Europe House Novi Sad and the Youth Center.</p>
+          </div>
+          <div class="event">
+            <p class="time">14:00 – 16:00 Socratic Café on Environmental Protection</p>
+            <p class="lokacija">Sinhro Pančevo</p>
+            <p class="body-text">A discussion program for young people aged 15–25, moderated by an environmental protection engineer, encouraging reflection, dialogue, and idea exchange on environmental solutions. Organized in partnership with Sinhro HUB Pančevo.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">22 November - Saturday</p>
+          <div class="event">
+            <p class="time">11:00 – 12:30 Kids’ Workshop: Four Green Seasons</p>
+            <p class="lokacija">Europe House Belgrade</p>
+            <p class="body-text">Interactive workshop where participants visualize and conceptualize Vivaldi’s Four Seasons through drawing and environmental discussions. Focus on nature preservation, climate, and seasonal changes.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">23 November - Sunday</p>
+          <div class="event">
+            <p class="time">10:00 – 14:00 Cleanup Action: Rusanda Nature Park</p>
+            <p class="lokacija">Rusanda Nature Park</p>
+            <p class="body-text">Community activity organized by the Society for the Protection and Study of Birds of Serbia to remove waste and tackle illegal dumps in Rusanda Nature Park, focusing on biodiversity protection and reducing human-caused pollution. Supported by Europe House Novi Sad.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">25 November - Wednesday</p>
+          <div class="event">
+            <p class="time">19:00 – 20:30 Opening of the Exhibition and Competition “Transparent – Don’t Buy, Create”</p>
+            <p class="lokacija">Neon Art Gallery, Belgrade</p>
+            <p class="body-text">From 25 to 27 November, the group exhibition presents upcycled artworks inspired by glass and the balance of strength and fragility. Organized by the Young Researchers of Serbia with support from Sweden. Gallery hours: 26–27 November, 17:00–20:00.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ENGLISH CONTENT END -->
+      <div class="footer">
+        <a href="http://www.europa.rs">www.europa.rs</a>
+      </div>
+    </div>
+    <!-- Serbian Banner & Agenda -->
+    <div id="agenda-srb" lang="sr" style="display:none;">
+      <img class="banner" src="banner-srb.jpg" alt="Evropska nedelja zelene diplomatije">
+      <!-- SERBIAN CONTENT START -->
+      <div class="date-section">
+        <hr style="border: none; border-top: 3px solid #FFF; margin-bottom: 30px;">
+        <p class="date-header programme-header">PROGRAM</p>
+        <div class="date-section">
+          <p class="date-header">14. novembar – petak</p>
+          <div class="event">
+            <p class="time">19:00 – 20:20 Filmske večeri petkom: „Klimatski heroj: Čovek koji sadi baobabe“</p>
+            <p class="lokacija">Evrohouse Beograd</p>
+            <p class="body-text">Prikaz dokumentarnog filma o 50-ogodišnjem poslu El Hadja Salifou Ouédraogoa, koji sadi baobabe u Burkina Fasu. Mreženje i neformalna razmena mišljenja o klimatskim promenama.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">17. novembar – ponedeljak</p>
+          <div class="event">
+            <p class="time">14:00 – 16:00 Pokretanje aplikacije „Grad i ja“: Uključivanje građana za zeleniji budućnost</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Pokretanje aplikacije „Grad i ja“, koja nagradjuje održive radnje kao što su hodanje, biciklizam, reciklaža i sada baobaba, i podstiče građansku angažovanost i lokalnu saradnju. Korisnici aplikacije mogu pratiti sadnju saplinga u Surčinu (do 25. novembra, u zavisnosti od vremena) kroz Discover Serbia, kao deo projekta za zelenje 250 hektara sa 500.000 stabala, nastavljajući podršku EU-u za zeleni agendu u Srbiji pod projektom EU za zeleni agendu u Srbiji.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">18. novembar –utorak</p>
+          <div class="event">
+            <p class="time">09:30 – 13:00 Unapređivanje ženskih preduzetnika u zelenom prelasku: „SME Go Green“ radionica</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Interaktivna radionica o održivim poslovnim praksama i zelenim finansiranju za ženske vodice MSB. Učesnici će naučiti načine efikasnog ulaganja u obnovljive energije. (Partnerstvo sa EBRD)</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 Klimatski razgovori: Rešenja zasnovana na prirodi za otporniji grad</p>
+            <p class="lokacija">Evropska kuća Niš</p>
+            <p class="body-text">Lokalni dijalog o urbanskim klimatskim ranjivostima, uključujući poplave i toplinske otvore, sa prezentacijama rešenja zasnovanih na prirodi iz projekta NATURED. Podstiče saradnju eksperta, institucija i građana putem Interreg IPA ADRION programa.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">19. novembar – sreda</p>
+          <div class="event">
+            <p class="time">10:00 – 12:00 „Priroda i društvo“: Interaktivna klasa za čuvanje vode</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Obrazovni program za učenike drugog i trećeg razreda OŠ Drinka Pavlović, uključujući predavanje o vodnom životu i zaštiti okruženja, interaktivnu aktivnost akvarijuma sa influencerom Andrijom Jo i predstavnikom EUD-a, kao i prakse na školskom zelenom krovu (podržan od GEF-a) i inovacije iz Svedske za čuvanje mokraća, koje su implementirane od strane UNDP-a. Uključuje aktivaciju na EU4Green izložbi.</p>
+          </div>
+          <div class="event">
+            <p class="time">12:00 – 13:15 RERI zeleni panel diskusija</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Panel sa učesnicima iz europskih podržanih projekata i premijera kratkog filma pod BESTbelt inicijativom. Uključeni su predstavnici lokalne vlasti, ambasada, preduzeća, mladih i ekoloških organizacija.</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 Budućnost hrane: Preispitivanje gubitaka hrane — Od planiranja do stola</p>
+            <p class="lokacija">Evropska kuća Niš</p>
+            <p class="body-text">U saradnji sa Naučnim klubom Niš, novi mesecni niz istražuje kako inovacije, tehnologija i hranljiva kultura oblikuju održivo življenje. Novembarska izdanja, održana uz pomoć Institut za hranu (FINS), fokusira se na smanjenje domaćih gubitaka hrane putem pametnijeg kupovnog planiranja, planiranja obroka i boljeg korišćenja sastojaka.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">20. novembar – četvrtak</p>
+          <div class="event">
+            <p class="time">11:30 – 13:00 Prezentacija senkastog izveštaja - Poglavlje 27 u Srbiji: Greška sistema</p>
+            <p class="lokacija">Beograd, Miljenko Dereta prostor</p>
+            <p class="body-text">Dvanaesti senkasti izveštaj Saveza 27 pokriva napredak Srbije u poglavlju 27 – Okruženje i klimatske promene od aprila 2024 do maja 2025, obrađujući ključne razvoje i izazove u oblastima otpad, vazduh, voda, zaštita prirode, klima i srodne sektore.</p>
+          </div>
+          <div class="event">
+            <p class="time">13:00 – 15:00 Umjetnost fike – Radionica za upajklažing</p>
+            <p class="lokacija">Evropska kuća Niš</p>
+            <p class="body-text">Inspirisan švedskom tradicijom fike — kafa, povezivanje i inspiracija — radionica spaja opuštenu atmosferu sa kreativnim pristupom održivosti. Učesnici će istražiti švedske prakse reciklaže i upajklažinga dok uživaju u kafi i razgovoru.</p>
+          </div>
+          <div class="event">
+            <p class="time">15:00 – 16:00 Otvaranje EU4GREEN izložbe</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Ceremonijalno otvaranje izložbe „Najzeleniji primeri iz zapadnih Balkana“, koja prikazuje izabrane konkursne unose o kružnom ekonomiju, smanjenju zagađenja i zaštiti biološke raznolikosti. Izložba je prikazana 18–24. novembra sa aktivacijama tokom cele nedelje.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">21. novembar – petak</p>
+          <div class="event">
+            <p class="time">11:00 – 13:00 Sofistička kafa na zaštitu okruženja</p>
+            <p class="lokacija">Otvoreno Novi Sad</p>
+            <p class="body-text">Moderirano od strane inženjera za zaštitu okruženja, ovaj program za učenike i studente podstiče razmenu ideja o rešenjima za zaštitu okruženja. Organizovan u saradnji sa Evrohouse Novi Sad i Mladinskom centrom.</p>
+          </div>
+          <div class="event">
+            <p class="time">14:00 – 16:00 Sofistička kafa na zaštitу okruženja</p>
+            <p class="lokacija">Sinhro Pančevo</p>
+            <p class="body-text">Diskusioni program za mlade u dobi od 15 do 25 godina, moderiran od strane inženjera za zaštitu okruženja, podstiče razmišljanje, dijalog i razmenu ideja o rešenjima za zaštitу okruženja. Organizovan u saradnji sa Sinhro HUB Pančevo.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">22. novembar – subota</p>
+          <div class="event">
+            <p class="time">11:00 – 12:30 Radionica za decu: Četiri zelena vremena</p>
+            <p class="lokacija">Evropska kuća Beograd</p>
+            <p class="body-text">Interaktivna radionica gde učesnici vizualizuju i konceptualizuju Vivaldijevih četiri vremena godišta kroz crtanje i diskusije o prirodi. Fokus na zaštitu prirode, klimu i sezonske promene.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">23. novembar – nedelja</p>
+          <div class="event">
+            <p class="time">10:00 – 14:00 Akcija čišćenja: Rusanda prirodni park</p>
+            <p class="lokacija">Rusanda prirodni park</p>
+            <p class="body-text">Zajednička aktivnost organizovana od strane Saveza za zaštitu i proučavanje ptica Srbije za uklanjanje otpada i borbu protiv nezakonitih zaliha u Rusandi prirodnom parku, fokusirana na zaštitu biološke raznolikosti i smanjenje ljudskog uzrokovane zagađenja. Podržana od strane Evrohouse Novi Sad.</p>
+          </div>
+        </div>
+        <div class="date-section">
+          <p class="date-header">25. novembar – sreda</p>
+          <div class="event">
+            <p class="time">19:00 – 20:30 Otvaranje izložbe i konkursa „Transparentno – Ne kupuj, pravi“ </p>
+            <p class="lokacija">Neon art galerija, Beograd</p>
+            <p class="body-text">Od 25 do 27. novembra, grupna izložba prikazuje upajklažirane umetničke delove inspirisane staklom i ravnotežom snage i lomljivosti. Organizovana od strane mladih istraživača Srbije sa podrškom Svedske. Radno vreme galerije: 26–27. novembra, 17:00–20:00.</p>
+          </div>
+        </div>
+      </div>
+      <!-- SERBIAN CONTENT END -->
+      <div class="footer">
+        <a href="http://www.europa.rs">www.europa.rs</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchLang(lang) {
+  var en = document.getElementById('agenda-en');
+  var srb = document.getElementById('agenda-srb');
+  var btnEng = document.getElementById('btn-eng');
+  var btnSrb = document.getElementById('btn-srb');
+  if (lang === 'en') {
+    en.style.display = '';
+    srb.style.display = 'none';
+    btnEng.classList.add('active');
+    btnSrb.classList.remove('active');
+    btnEng.setAttribute('aria-pressed', 'true');
+    btnSrb.setAttribute('aria-pressed', 'false');
+  } else {
+    en.style.display = 'none';
+    srb.style.display = '';
+    btnEng.classList.remove('active');
+    btnSrb.classList.add('active');
+    btnEng.setAttribute('aria-pressed', 'false');
+    btnSrb.setAttribute('aria-pressed', 'true');
+  }
+}
+</script>
+</body>
+</html>
