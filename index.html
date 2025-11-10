@@ -50,6 +50,21 @@
   color: #183C6C;
   outline: none;
 }
+#bilingual-agenda .print-btn {
+  background: #FF6B6B;
+  color: #FFF;
+  border: none;
+  padding: 8px 18px;
+  margin-left: 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#bilingual-agenda .print-btn:hover {
+  background: #FF5252;
+}
 #bilingual-agenda .banner {
   width: 100%;
   height: auto;
@@ -148,6 +163,7 @@
     <div class="toggle-header" role="group" aria-label="Language toggle">
       <button class="lang-toggle-btn active" id="btn-eng" aria-pressed="true" onclick="switchLang('en')">ENG</button>
       <button class="lang-toggle-btn" id="btn-srb" aria-pressed="false" onclick="switchLang('srb')">SRB</button>
+      <button class="print-btn" id="print-btn" onclick="printAgenda()" style="display:none;">PRINT</button>
     </div>
     <!-- English Banner & Agenda -->
     <div id="agenda-en" lang="en">
@@ -179,6 +195,11 @@
             <p class="body-text">Interactive workshop on sustainable business practices and green finance for women-led SMEs. Participants will learn cost-effective ways to invest in renewable energy. (EBRD partnership)</p>
           </div>
           <div class="event">
+            <p class="time">09:30 – 13:30 Environmental Policy Forum: “Local solutions for (inter)national policies”</p>
+            <p class="lokacija">Hall 1 of the Serbian Chamber of Commerce</p>
+            <p class="body-text">Presenting 40 local NGO and SCO projects that tackle environmental topics as a direct response to Serbia's common challenges for global efforts to mitigate and adapt to climate change. Marking the end of the project "Actions of Serbia in the field of environment, nature and climate" (SAFE nature & climate), which is supported by the European Commission through the Civil Society Support Program. <strong><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=4_I-hC_LHkKfic990TqP30QN5onbIZ9CgrQz-XcLGyRUMThZWU1PSkJKWVIwNURES1hBOTlSRlo4VC4u">Registration</a></strong> required.</p>
+          </div>
+          <div class="event">
             <p class="time">13:00 – 15:00 Climate Talks: Nature-based Solutions for a Resilient City</p>
             <p class="lokacija">Europe House Niš</p>
             <p class="body-text">Local dialogue on urban climate vulnerabilities, including floods and heat islands, with presentations of Nature-based Solutions from the NATURED project. Fostering expert, institutional, and citizen collaboration via the Interreg IPA ADRION Programme.</p>
@@ -189,7 +210,7 @@
           <div class="event">
             <p class="time">11:30 – 12:30 “Priroda i društvo”: Interactive Water Preservation Classroom</p>
             <p class="lokacija">Europe House Belgrade</p>
-            <p class="body-text">Educational program for 2nd–3rd graders of Drinka Pavlović School including a lecture on aquatic life and environmental preservation, an interactive aquarium session with influencer Andrija Jo and Andreas von Beckerath, Ambassador of the European Union to Serbia, and hands-on activities showcasing Sweden-supported innovations for wetlands preservation, implemented by UNDP..</p>
+            <p class="body-text">Educational program for 2nd–3rd graders of Drinka Pavlović School including a lecture on aquatic life and environmental preservation, an interactive aquarium session with influencer Andrija Jo and Andreas von Beckerath, Ambassador of the European Union to Serbia, and hands-on activities showcasing Sweden-supported innovations for wetlands preservation, implemented by UNDP.</p>
           </div>
           <div class="event">
             <p class="time">12:00 – 13:15 RERI Green Panel Discussion</p>
@@ -294,6 +315,11 @@
             <p class="body-text">Interaktivna radionica o održivim poslovnim praksama i zelenom finansiranju za mala i srednja preduzeća kojima rukovode žene. Učesnice će naučiti isplative načine ulaganja u obnovljive izvore energije. </p>
           </div>
           <div class="event">
+            <p class="time">09:30 – 13:30 Forum o životnoj sredini: „Lokalna rešenja za (međunarodne) politike“</p>
+            <p class="lokacija">Sala 1 Privredne komore Srbije</p>
+            <p class="body-text">Predstavljanje 40 lokalnih projekata organizacija civilnog društva koje se bave temama zaštite životne sredine kao direktnim odgovorom Srbije na zajedničke globalne izazove u ublažavanju i prilagođavanju klimatskim promenama. Forum obeležava završetak projekta „Akcije Srbije u oblasti životne sredine, prirode i klime“ (SAFE nature & climate), koji podržava Evropska komisija kroz Program podrške civilnom društvu. <strong><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=4_I-hC_LHkKfic990TqP30QN5onbIZ9CgrQz-XcLGyRUMThZWU1PSkJKWVIwNURES1hBOTlSRlo4VC4u">Registracija</a></strong> neophodna.</p>
+          </div>
+          <div class="event">
             <p class="time">13:00 – 15:00 Klimatski razgovori: Rešenja zasnovana na prirodi za otporan grad</p>
             <p class="lokacija">Evropska kuća Niš</p>
             <p class="body-text">Lokalni dijalog o urbanim klimatskim ranjivostima, uključujući poplave i toplotna ostrva, uz predstavljanje rešenja zasnovanih na prirodi iz projekta NATURED. Cilj je podsticanje saradnje stručnjaka, institucija i građana kroz program Interreg IPA ADRION.</p>
@@ -309,7 +335,7 @@
           <div class="event">
             <p class="time">12:00 – 13:15 RERI Zeleni panel</p>
             <p class="lokacija">Evropska kuća Beograd</p>
-            <p class="body-text">Panel na kojem učestvuju učenici iz projekata koje podržava EU, uz premijeru kratkog filma u okviru inicijative BESTbelt. Učesnici uključuju predstavnike lokalnih samouprava, ambasada, privrede, omladine i organizacija za zaštitu životne sredine.</p>
+            <p class="body-text">Panel na kojem učestvuju učenici iz projekata koje podržava EU, uz premijeru kratkog filma u okviru inicijative BESTbelt. Učesnici uključuju predstavnike lokalnih samouprava, ambasada, privrede, omladine i organizacija za zaštitу životne sredine.</p>
           </div>
           <div class="event">
             <p class="time">13:00 – 15:00 Budućnost hrane: Novo promišljanje otpada od hrane — od planiranja do tanjira</p>
@@ -404,6 +430,22 @@ function switchLang(lang) {
     btnSrb.setAttribute('aria-pressed', 'true');
   }
 }
+
+function printAgenda() {
+  window.print();
+}
+
+// Check if page is embedded in an iframe
+function checkIfEmbedded() {
+  if (window.self === window.top) {
+    // Not embedded, show print button
+    document.getElementById('print-btn').style.display = 'block';
+  }
+  // If embedded, print button remains hidden
+}
+
+// Run check when page loads
+window.addEventListener('load', checkIfEmbedded);
 </script>
 </body>
 </html>
